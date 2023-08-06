@@ -1,0 +1,154 @@
+:root {
+    --color: #ff206e
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.484)), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.content a {
+    color: var(--color);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--color);
+}
+
+.navbar .nav-link {
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: var(--color);
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    transition: width 1s;
+}
+
+.navbar .nav-link:hover::after {
+    width: 60%;
+}
+
+.navbar .nav-link.active::after {
+    width: 70%;
+}
+
+
+
+.icon i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.5s;
+}
+
+.icon i:hover {
+    border-color: var(--color) !important;
+}
+
+.brd {
+    width: 50px;
+    height: 80px;
+}
+
+.brd::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--color);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    animation: move infinite 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 70%;
+        opacity: 0.5;
+    }
+
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #ccc;
+    letter-spacing: 3px;
+}
+
+.feedback-letter {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.feedback-letter::after {
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: var(--color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+
+.feedback-item:hover .feedback-letter::after {
+    width: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+.item{
+    overflow: hidden;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 110%;
+    opacity: 0;
+    left: 15px;
+    right: 15px;
+    background-color: #ffffffd4;
+    transition: all 1s;
+}
+.item:hover .layer{
+    bottom: 15px;
+    opacity: 1;
+}
+.item img{
+    transition: filter 1s;
+}
+.item:hover img{
+    filter:blur(10px);
+}
+
+.nav-tabs{
+    border: none;
+}
