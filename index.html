@@ -8,15 +8,63 @@
   <link rel="stylesheet" href="css/style.css">
 
 
-  <script src="js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
 
 
+   <div class="loading d-flex">
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div> 
+
+
+  <div class="sidebar">
+    <div class="innerbox d-flex flex-column justify-content-around">
+
+      <div class="d-flex justify-content-around align-items-center">
+        <div class="bgbox">
+          <img class="box-img" src="images/code-isometric-icon-software-development.avif" alt="">
+        </div>
+        <div class="bgbox">
+          <img class="box-img" src="images/bg2.jpg" alt="">
+        </div>
+        <div class="bgbox">
+          <img class="box-img" src="images/bgs.jpg" alt="">
+        </div>
+        <div class="bgbox">
+          <img class="box-img" src="images/web-developer-portfolio.png" alt="">
+        </div>
+      </div>
+      <div id="color-box" class="d-flex justify-content-around align-items-center">
+        <div class="box bg-light"></div>
+        <div class="box bg-warning"></div>
+        <div class="box bg-danger"></div>
+        <div class="box bg-primary"></div>
+        <div class="box bg-success"></div>
+      </div>
+    </div>
+
+    <div i class="setting d-flex justify-content-center align-items-center p-2">
+      <i class="fa-solid fa-gear fa-2x"></i>
+    </div>
+  </div>
+
+  <i class="fa-regular fa-circle-up text-info icoTop fa-3x position-fixed bottom-0 end-0 m-5"></i>
+
 
   <header id="home" class=" vh-100 position-relative">
-    <nav class="navbar navtest fixed-top navbar-expand-lg bg-dark ">
+    <nav class="navbar fixed-top navbar-expand-lg  ">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">OSAKA
         </a>
@@ -30,7 +78,7 @@
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link " href="#about">about</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#service">service</a>
@@ -38,18 +86,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#blog">blog</a>
             </li>
-
-
           </ul>
-
         </div>
       </div>
     </nav>
     <div class="container  d-flex align-items-center h-100">
       <div class="content">
-        <h1 class="fa-4x fw-bold">Aya Ali</h1>
-        <p class="fw-bold mb-5">Developer, Graphics & Web Design</p>
-        <a href="#" class="text-decoration-none fw-bold">VIEW PORTFOLIO</a>
+        <h1 class="fa-4x fw-bold colorCustom box-color ">AHMED DWEDAR</h1>
+        <p class="fw-bold mb-5 box-color">Developer & Web Designer</p>
+        <a href="#" class="text-decoration-none box-color fw-bold">VIEW PORTFOLIO</a>
       </div>
     </div>
     <div class="icon m-3 d-flex justify-content-between align-items-center  col-2 position-absolute bottom-0 start-0">
@@ -64,10 +109,10 @@
   </header>
 
 
-  <section class="feedback">
+  <section id="about" class="feedback ">
     <div class="container py-5">
       <div class="content position-relative  d-flex justify-content-center align-items-center">
-        <h2>TESTIMONIALS</h2>
+        <h2 >TESTIMONIALS</h2>
         <h3 class="position-absolute">TESTIMONIALS</h3>
       </div>
 
@@ -87,9 +132,9 @@
             <div class="feedback-item border border-2 text-center  mt-5">
               <img src="images/1 (1).jpg" class="col-1 rounded-circle  p-2 translate-middle-y shadow-lg" alt="">
               <h3>Ahmed Ali</h3>
-              <p class="feedback-letter">Lorem, ipsum.</p>
+              <p class="feedback-letter ">Lorem, ipsum.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis dolore quaerat sequi, veniam vel
-                totam, est pariatur quae, nobis laudantium odio mollitia laboriosam deserunt eum voluptatibus ipsum
+                totam, est pariatur quae, nobis laudantium odio mollitia voluptatibus ipsum
                 facilis accusantium!</p>
             </div>
           </div>
@@ -98,7 +143,7 @@
               <img src="images/2 (1).jpg" class="col-1 rounded-circle  p-2 translate-middle-y shadow-lg" alt="">
               <h3>ISlam Ahmed</h3>
               <p class="feedback-letter">Lorem, ipsum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis dolore quaerat sequi, veniam vel
+              <p>Lorem  consectetur adipisicing elit, veniam vel
                 totam, est pariatur quae, nobis laudantium odio mollitia laboriosam deserunt eum voluptatibus ipsum
                 facilis accusantium!</p>
             </div>
@@ -108,7 +153,7 @@
               <img src="images/5.jpg" class="col-1 rounded-circle  p-2 translate-middle-y shadow-lg" alt="">
               <h3>Mohamed Mostafa</h3>
               <p class="feedback-letter">Lorem, ipsum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis dolore quaerat sequi, veniam vel
+              <p>Lorem adipisicing elit. Quas omnis dolore quaerat sequi, veniam vel
                 totam, est pariatur quae, nobis laudantium odio mollitia laboriosam deserunt eum voluptatibus ipsum
                 facilis accusantium!</p>
             </div>
@@ -119,7 +164,7 @@
               <h3>Mostafa Mostafa</h3>
               <p class="feedback-letter">Lorem, ipsum.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis dolore quaerat sequi, veniam vel
-                totam, est pariatur quae, nobis laudantium odio mollitia laboriosam deserunt eum voluptatibus ipsum
+                totam, est pariatur quae, nobis eum voluptatibus ipsum
                 facilis accusantium!</p>
             </div>
           </div>
@@ -132,14 +177,13 @@
   </section>
 
 
-  <section id="portfolio" class="bg-light py-5">
+  <section id="service" class=" py-5">
     <div class="content position-relative  d-flex justify-content-center align-items-center">
       <h2>PORTFOLIO</h2>
       <h3 class="position-absolute">PORTFOLIO</h3>
     </div>
 
     <div class="container-fluid">
-
 
       <div class="row g-4 ">
         <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -153,7 +197,6 @@
         </div>
         <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal2">
           <div class="item   position-relative ">
-
             <img src="images/2 (2).jpg" class="w-100" />
             <div class="layer d-flex justify-content-center align-items-center  ">
               <h3>Project</h3>
@@ -201,7 +244,7 @@
 
   </section>
 
-  <section>
+  <section id="blog">
 
     <div class="container py-5">
       <ul class="nav nav-tabs mb-5 justify-content-center" id="myTab" role="tablist">
@@ -217,7 +260,7 @@
           <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
             type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
         </li>
-    
+
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
@@ -226,7 +269,7 @@
           <div class="row g-4 ">
             <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -235,7 +278,7 @@
             </div>
             <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal2">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -244,7 +287,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -253,7 +296,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -262,7 +305,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -271,7 +314,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -282,11 +325,11 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
 
-          
+
           <div class="row g-4 ">
             <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -295,7 +338,7 @@
             </div>
             <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal2">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -304,7 +347,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
@@ -313,14 +356,14 @@
             </div>
             <div class="col-md-4 col-sm-6">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
@@ -328,24 +371,24 @@
           <div class="row g-4 ">
             <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
                 </div>
               </div>
             </div>
-          
+
             <div class="col-md-4 col-sm-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="item   position-relative ">
-    
+
                 <img src="images/2 (2).jpg" class="w-100" />
                 <div class="layer d-flex justify-content-center align-items-center  ">
                   <h3>Project</h3>
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
 
@@ -381,7 +424,7 @@
         <div class="modal-body p-0">
 
 
-          <img src="images/1.jpg" class="w-100" alt="">
+          <!-- <img src="images/1.jpg" class="w-100" alt=""> -->
         </div>
       </div>
     </div>
@@ -389,6 +432,10 @@
 
 
 
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
